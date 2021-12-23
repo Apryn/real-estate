@@ -12,6 +12,7 @@ class home_page extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 17, vertical: 23),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     child: IconButton(
@@ -23,14 +24,38 @@ class home_page extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                     ),
                   ),
-                  Icon(
-                    Icons.location_searching,
-                    color: Orange,
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.location_searching,
+                        color: Orange,
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        'Banda Aceh,',
+                        style: Semibold,
+                      ),
+                      Text(
+                        'Ind',
+                        style: RegularP,
+                      ),
+                    ],
                   ),
-                  // Text('California,',style: ,)
+                  Container(
+                    child: IconButton(
+                        onPressed: () {}, icon: Icon(Icons.notifications)),
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(5),
+                    ),
+                  )
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

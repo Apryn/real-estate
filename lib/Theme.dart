@@ -10,7 +10,7 @@ TextStyle Semibold =
 TextStyle Bold =
     TextStyle(fontFamily: "Montserrat", fontWeight: FontWeight.w700);
 
-TextStyle Regular=
+TextStyle Regular =
     TextStyle(fontFamily: "Montserrat", fontWeight: FontWeight.w400);
 
 TextStyle MediumP =
