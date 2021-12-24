@@ -15,13 +15,12 @@ class home_page extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    child: IconButton(
-                        onPressed: () {}, icon: Icon(Icons.category)),
+                    child: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
                     width: 50,
                     height: 50,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                   ),
                   Row(
@@ -50,12 +49,70 @@ class home_page extends StatelessWidget {
                     height: 50,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 17, vertical: 23),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.search,
+                                color: Colors.grey,
+                              )),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 10),
+                            child: Text(
+                              'Search Classic Style',
+                              style: Regular.copyWith(color: grey),
+                            ),
+                          ),
+                          Spacer(),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.music_note),
+                            color: Orange,
+                          ),
+                        ],
+                      ),
+                    ),
+                    width: 300,
+                    height: 55,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  Container(
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.category,
+                        color: Colors.white,
+                      ),
+                    ),
+                    width: 50,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Black,
                     ),
                   )
                 ],
               ),
-            ),
+            )
           ],
         ),
       ),
