@@ -112,6 +112,16 @@ class home_page extends StatelessWidget {
                   )
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Container(
+                  child: Image.asset("Assets/images/House-Pic.png"),
+                  width: 300,
+                  height: 300,
+                  color: Black,
+                )
+              ],
             )
           ],
         ),
