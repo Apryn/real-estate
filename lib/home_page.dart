@@ -116,10 +116,15 @@ class home_page extends StatelessWidget {
             Row(
               children: [
                 Container(
-                  child: Image.asset("Assets/images/House-Pic.png"),
                   width: 300,
                   height: 300,
-                  color: Black,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage('Assets/images/House-Pic.png'),
+                          fit: BoxFit.cover)),
+                  child: Stack(
+                    children: [Container(color: Colors.black.withOpacity(0.3))],
+                  ),
                 )
               ],
             )
