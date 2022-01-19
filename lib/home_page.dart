@@ -122,50 +122,76 @@ class home_page extends StatelessWidget {
             ),
           ),
           //House Section
-          Row(
-            children: [
-              Stack(
-                children: [
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(5),
-                        image: DecorationImage(
-                            image: AssetImage('Assets/images/House-Pic.png'),
-                            fit: BoxFit.cover)),
-                  ),
-                  Container(
-                    width: 200,
-                    height: 200,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: Colors.black.withOpacity(0.2),
+
+          Padding(
+            padding: const EdgeInsets.only(left: 10),
+            child: Row(
+              children: [
+                Stack(
+                  children: [
+                    Container(
+                      width: 200,
+                      height: 250,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(5),
+                          image: DecorationImage(
+                              image: AssetImage('Assets/images/House-Pic.png'),
+                              fit: BoxFit.cover)),
                     ),
-                  ),
-                  Row(
-                    children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Aceh Classic',
-                            style: Semibold.copyWith(color: Colors.white),
-                          ),
-                          Text(
-                            'Keutapang Dua, Lamara 09',
-                            style: Regular.copyWith(
-                                color: Colors.white, fontSize: 8),
-                          )
-                        ],
-                      )
-                    ],
-                  )
-                ],
-              ),
-            ],
-          )
+                    Container(
+                      width: 200,
+                      height: 250,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.black.withOpacity(0.3),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  'Aceh Classic',
+                                  style: Semibold.copyWith(color: Colors.white),
+                                ),
+                                Text(
+                                  'Keutapang Dua, Lamara 09',
+                                  style: Regular.copyWith(
+                                      color: Colors.white, fontSize: 8),
+                                )
+                              ],
+                            ),
+                            Container(
+                              width: 30,
+                              height: 30,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                color: Colors.white,
+                              ),
+                              child: IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.favorite,
+                                    color: Red,
+                                    size: 15,
+                                  )),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+
           //Popular Section
           //Navbar
         ],
