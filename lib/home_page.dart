@@ -9,7 +9,7 @@ class home_page extends StatelessWidget {
     return Scaffold(
       backgroundColor: Background,
       body: SafeArea(
-          child: Column(
+          child: ListView(
         children: [
           //AppBar
           Padding(
@@ -122,9 +122,8 @@ class home_page extends StatelessWidget {
             ),
           ),
           //House Section
-
           Padding(
-            padding: const EdgeInsets.only(left: 10),
+            padding: const EdgeInsets.only(left: 10, bottom: 25),
             child: Row(
               children: [
                 Stack(
@@ -188,14 +187,232 @@ class home_page extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(
+                  width: 15,
+                ),
+                Stack(
+                  children: [
+                    Container(
+                      width: 200,
+                      height: 250,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(5),
+                          image: DecorationImage(
+                              image: AssetImage('Assets/images/House-Pic3.png'),
+                              fit: BoxFit.cover)),
+                    ),
+                    Container(
+                      width: 200,
+                      height: 250,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.black.withOpacity(0.3),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Text(
+                                  'Modernistic House',
+                                  style: Semibold.copyWith(color: Colors.white),
+                                ),
+                                Text(
+                                  'Ajuen Jeumpet No 11',
+                                  style: Regular.copyWith(
+                                      color: Colors.white, fontSize: 8),
+                                )
+                              ],
+                            ),
+                            Container(
+                              width: 30,
+                              height: 30,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                color: Colors.white,
+                              ),
+                              child: IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(
+                                    Icons.favorite,
+                                    color: Red,
+                                    size: 15,
+                                  )),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
 
           //Popular Section
-          //Navbar
+          Padding(
+            padding: const EdgeInsets.only(left: 10, right: 10),
+            child: Container(
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        'Popular',
+                        style: Semibold.copyWith(color: Black),
+                      ),
+                      Text(
+                        'See More',
+                        style: Semibold.copyWith(color: grey2),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    // width: 350,
+                    height: 80,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.white),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 5),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Stack(children: [
+                            Container(
+                              width: 70,
+                              height: 70,
+                              decoration: BoxDecoration(
+                                  // color: grey1,
+                                  borderRadius: BorderRadius.circular(8.1),
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'Assets/images/House-Pic2.png'),
+                                      fit: BoxFit.cover)),
+                            ),
+                            Container(
+                              width: 70,
+                              height: 70,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.black.withOpacity(0.2)),
+                            )
+                          ]),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Minimalist House',
+                                style: Semibold,
+                              ),
+                              Text(
+                                'Bitai No 11',
+                                style: Regular.copyWith(
+                                    color: grey1, fontSize: 12),
+                              )
+                            ],
+                          ),
+                          Spacer(),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.favorite,
+                                color: Red,
+                                size: 20,
+                              ))
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    // width: 350,
+                    height: 80,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        color: Colors.white),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 5),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Stack(children: [
+                            Container(
+                              width: 70,
+                              height: 70,
+                              decoration: BoxDecoration(
+                                  // color: grey1,
+                                  borderRadius: BorderRadius.circular(8.1),
+                                  image: DecorationImage(
+                                      image: AssetImage(
+                                          'Assets/images/House-Pic(1).png'),
+                                      fit: BoxFit.cover)),
+                            ),
+                            Container(
+                              width: 70,
+                              height: 70,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Colors.black.withOpacity(0.2)),
+                            )
+                          ]),
+                          SizedBox(
+                            width: 5,
+                          ),
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Futuristic House',
+                                style: Semibold,
+                              ),
+                              Text(
+                                'Lamteumen No 10',
+                                style: Regular.copyWith(
+                                    color: grey1, fontSize: 12),
+                              )
+                            ],
+                          ),
+                          Spacer(),
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.favorite,
+                                // color: Red,
+                                size: 20,
+                              ))
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
         ],
-      )),
+      ),
+      //Navbar
+      
+      ),
     );
   }
 }
