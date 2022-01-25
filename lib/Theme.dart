@@ -7,6 +7,7 @@ Color grey2 = Color(0xffADA8A4);
 Color grey3 = Color(0xffDDDBDA);
 Color Red = Color(0xffED0000);
 Color Background = Color(0xffE5E5E5);
+Color LessWhite = Color(0xffF7F8F8);
 
 TextStyle Semibold =
     TextStyle(fontFamily: "Montserrat", fontWeight: FontWeight.w600);
